@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1e293b;
+}
+
+main {
+  max-width: 640px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.auth-box {
+  max-width: 360px;
+  margin: 2rem auto;
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  flex: 1;
+  background: #334155;
+}
+
+.tab.active {
+  background: #3b82f6;
+}
+
+.error {
+  color: #f87171;
+  font-size: 0.85rem;
+  min-height: 1.2rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.row select, .row input {
+  margin-bottom: 0;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #1e293b;
+  border-left: 4px solid #64748b;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.task-item.priority-high {
+  border-left-color: #f87171;
+}
+
+.task-item.priority-medium {
+  border-left-color: #fbbf24;
+}
+
+.task-item.priority-low {
+  border-left-color: #34d399;
+}
+
+.task-item .task-title {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.task-item .task-meta {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 0.4rem;
+}
+
+.task-item .task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-item .task-actions button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.task-item .task-actions .delete-btn {
+  background: #ef4444;
+}
+
+.task-item .task-actions .delete-btn:hover {
+  background: #dc2626;
+}
