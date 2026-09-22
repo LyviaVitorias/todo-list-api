@@ -22,25 +22,26 @@ Vim do mercado financeiro (assessoria de investimentos, certificação ANBIMA) e
 
 ## Estrutura
 
+```
 todo-list-api/
 ├── backend/
-│ ├── app/
-│ │ ├── main.py # ponto de entrada da API
-│ │ ├── core/ # config, segurança (JWT/hash), dependências
-│ │ ├── db/ # engine e sessão do banco
-│ │ ├── models/ # models SQLAlchemy (User, Task)
-│ │ ├── schemas/ # schemas Pydantic
-│ │ ├── crud/ # acesso ao banco
-│ │ └── routers/ # endpoints (auth, tasks)
-│ ├── alembic/ # migrations
-│ ├── tests/ # testes com pytest
-│ ├── requirements.txt
-│ └── .env.example
+│   ├── app/
+│   │   ├── main.py        # ponto de entrada da API
+│   │   ├── core/           # config, segurança (JWT/hash), dependências
+│   │   ├── db/              # engine e sessão do banco
+│   │   ├── models/         # models SQLAlchemy (User, Task)
+│   │   ├── schemas/        # schemas Pydantic
+│   │   ├── crud/            # acesso ao banco
+│   │   └── routers/        # endpoints (auth, tasks)
+│   ├── alembic/             # migrations
+│   ├── tests/                # testes com pytest
+│   ├── requirements.txt
+│   └── .env.example
 └── frontend/
-├── index.html
-├── css/style.css
-└── js/ (api.js, auth.js, tasks.js)
-
+    ├── index.html
+    ├── css/style.css
+    └── js/ (api.js, auth.js, tasks.js)
+```
 
 ## Rodando localmente
 
@@ -104,7 +105,3 @@ Backend pensado para Render ou Railway, com PostgreSQL gerenciado. Frontend pode
 - Paginação na listagem
 - Refresh token
 - Testes cobrindo o CRUD de tarefas, hoje só autenticação está coberta
-
-- Paginação na listagem de tarefas
-- Refresh token
-- Testes cobrindo o CRUD de tarefas, além da autenticação
